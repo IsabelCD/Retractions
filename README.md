@@ -2,34 +2,58 @@
 
 ## **Tópicos**
 
-- Estudos sobre artigos retraídos
-- Estudos retraídos
-- Citações dos artigos retraídos
+- Papers about retractions
+- Retracted articles
+- Citations of retracted articles
+- Referee reports
 
 ## **Sub-tópicos**
 
-- Motivos das retrações: erros científicos, má conduta, ambos ou nenhum
-- Diferença entre um retracted article e um “normal” (p.ex. título, len, len título, keywords, etc.)
+*Retraction characteristics*
+RWD data
+- Reasons for retraction
 - See who initiated retraction proceedings (if it was the author, publisher, etc.)
-- Dinâmicas regionais (norte vs sul global) das retrações
-- Compara G7 aos BRICK
-- Análise por journal, área científica
-- Comparar retrações ao ranking da revista
-- how retraction in one article can affect other articles of same author
-- how does it affect authors in the same field
-- Re-incidência
-- Tempo entre artigo ser publicado e a sua retração
-- Nº de retracted ao longo do tempo, comparado ao nº total de publicações (agregado por journal, área, etc.)
+- Geographic differences (compare G7 w/ BRICK, north/south, etc. )
+- Analysis by journal (and compare ranking)
+- Analysis by scientific area
+- Number of retracted articles in time, aggregated by characteristics above
+- Reincidence
+- Time between article being published and its retraction
 
-*Citações*
+WRD data + WOS data
+- Difference between retracted article and "normal" article (example by title, length, keywords, etc.)
+- How retraction in one article can affect other articles of same author
+- How does it affect authors in the same field (or same university?)
+- Was the article re-published? How many? How much time after retraction? Reason?
 
-- citações tendo em conta motivo
-- citations of retracted paper see if positive or negative, flag them if reason of retraction invalidates finding.
-- citações given journal (forma de mostrar que foi retracted pode ser impactante).
-- Impacto dos retracted articles (citações, Altmetrics, Plumx, etc.) → antes e depois da retração
+
+*Citations*
+- Citations given motive, journal, etc. 
+- Citations of retracted paper: positive or negative (flag them if reason of retraction invalidates finding of the paper that cited).
+- Impact of retracted articles (citations, altmetrics, etc.) -> before and after retraction
+
+*Referee reports - Publons data*
+- see [The effectiveness of peer review in identifying issues leading to retractions](https://doi.org/10.1016/j.joi.2023.101423)
+
+## Important Links
+
+- [Retraction Watch Database](http://retractiondatabase.org/RetractionSearch.aspx?AspxAutoDetectCookieSupport=1); [User Guide](https://retractionwatch.com/retraction-watch-database-user-guide/)
+- [Rank revistas científicas](https://www.scimagojr.com/)
+- [Altmetric explorer](https://www.altmetric.com/explorer/login), [PlumX Metrics](https://plumanalytics.com/learn/about-metrics/), [Dimensions](https://www.dimensions.ai/dimensions-data/)
+
+
+## Possible Exclusion Criteria
+
+- By journal (de 1o decil segundo scimagojr)
+- Published less than a year ago
+- Reason for retraction being “duplicates” (clerical error and not about article itself)
+- Retracted in pre-print stage
+- Articles that were re-published in another journal
+
 
 ## **Metodologias/Visualizações Específicas**
-    
+(not revised yet)
+
 - Retraction rate by country
 
   Bar chart with retraction rate per 10000 papers by country (foto no wpp).
@@ -80,21 +104,4 @@
     The map can be normalized by number of articles written by those countries. bc proportion wise, they might have more retractions
     
 
-## Questões/Pesquisa
 
-- Para as altmetrics qual é a melhor plataforma de se usar
-- Como devo filtrar os nossos artigos retraídos
-- Como agrupar motivos
-- ~~É possível medir o impacto que tem num autor a, se ele colaborou com um autor b que teve uma retração por academic misconduct (num artigo que não tenha sido a colaboração)?~~
-
-## Links Importantes
-
-- [Retraction Watch Database](http://retractiondatabase.org/RetractionSearch.aspx?AspxAutoDetectCookieSupport=1); [User Guide](https://retractionwatch.com/retraction-watch-database-user-guide/)
-- [Rank revistas científicas](https://www.scimagojr.com/)
-- [Altmetric explorer](https://www.altmetric.com/explorer/login), [PlumX Metrics](https://plumanalytics.com/learn/about-metrics/), [Dimensions](https://www.dimensions.ai/dimensions-data/)
-
-## Possible Exclusion Criteria
-
-- by journal (de 1o decil segundo scimagojr)
-- published less than a year ago
-- reason for retraction being “duplicates” (clerical error and not about article itself)
