@@ -31,8 +31,9 @@
 ## **Metodologias/Visualizações Específicas**
     
 - Retraction rate by country
-    Bar chart with retraction rate per 10000 papers by country (foto no wpp).
-    And line chart for that retraction rate, by year.
+
+  Bar chart with retraction rate per 10000 papers by country (foto no wpp).
+  And line chart for that retraction rate, by year.
 
 - Gráfico de autores
     
@@ -81,10 +82,10 @@
 
 ## Questões/Pesquisa
 
-- ~~É possível medir o impacto que tem num autor a, se ele colaborou com um autor b que teve uma retração por academic misconduct (num artigo que não tenha sido a colaboração)?~~
 - Para as altmetrics qual é a melhor plataforma de se usar
 - Como devo filtrar os nossos artigos retraídos
 - Como agrupar motivos
+- ~~É possível medir o impacto que tem num autor a, se ele colaborou com um autor b que teve uma retração por academic misconduct (num artigo que não tenha sido a colaboração)?~~
 
 ## Links Importantes
 
