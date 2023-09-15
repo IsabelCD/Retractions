@@ -1,15 +1,16 @@
 # Retractions
 
-## **Tópicos**
+## **Topics**
 
 - Papers about retractions
 - Retracted articles
 - Citations of retracted articles
 - Referee reports
 
-## **Sub-tópicos**
+## **Sub-topics**
 
 *Retraction characteristics*
+
 RWD data
 - Reasons for retraction
 - See who initiated retraction proceedings (if it was the author, publisher, etc.)
@@ -51,7 +52,7 @@ WRD data + WOS data
 - Articles that were re-published in another journal
 
 
-## **Metodologias/Visualizações Específicas**
+## **Methodologies and specific visualizations**
 (not revised yet)
 
 - Retraction rate by country
