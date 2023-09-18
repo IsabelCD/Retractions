@@ -12,7 +12,7 @@
 *Retraction characteristics*
 RWD data
 - Reasons for retraction
-- See who initiated retraction proceedings (if it was the author, publisher, etc.)
+- Who initiated retraction proceedings (if it was the author, publisher, etc.)
 - Geographic differences (compare G7 w/ BRICK, north/south, etc. )
 - Analysis by journal (and compare ranking)
 - Analysis by scientific area
@@ -35,12 +35,6 @@ WRD data + WOS data
 *Referee reports - Publons data*
 - see [The effectiveness of peer review in identifying issues leading to retractions](https://doi.org/10.1016/j.joi.2023.101423)
 
-## Important Links
-
-- [Retraction Watch Database](http://retractiondatabase.org/RetractionSearch.aspx?AspxAutoDetectCookieSupport=1); [User Guide](https://retractionwatch.com/retraction-watch-database-user-guide/)
-- [Rank revistas científicas](https://www.scimagojr.com/)
-- [Altmetric explorer](https://www.altmetric.com/explorer/login), [PlumX Metrics](https://plumanalytics.com/learn/about-metrics/), [Dimensions](https://www.dimensions.ai/dimensions-data/)
-
 
 ## Possible Exclusion Criteria
 
@@ -51,57 +45,101 @@ WRD data + WOS data
 - Articles that were re-published in another journal
 
 
-## **Metodologias/Visualizações Específicas**
-(not revised yet)
+## **Methodology/Specific Visualizations**
 
-- Retraction rate by country
+### Retraction Characteristics/Comparison with Normal Articles
 
-  Bar chart with retraction rate per 10000 papers by country (foto no wpp).
-  And line chart for that retraction rate, by year.
+(Temporal trends, reasons for retraction, geographical, journal and scientific area differences)
 
-- Gráfico de autores
-    
-    y autor, x tempo, dot chart com ponto no primeiro e último retracted article. cor representativo do nº de artigos retraídos do autor. ordenados por nº de artigos retraídos. 
-    
-- Collaboration network
-    
-    Network of authors joining author collaborations.
-    
-- Comparar citações positivas/negativas em relação ao artigo retraído
-    
-    Text mining sentiment analysis? tenho de saber onde é citado dentro dos artigos para conseguir fazer isto.
-    
-    ver tanto antes como depois da retração
-    
-- Regressão logística para avaliar características?
-    
-    y binário: retracted ou não.
-    
 - Stacked bar chart countries
     
     2 categories of stack are multiple countries publication and single country publication
     
-- Comparar journals “normais” a predatory ones
+- % of articles that are retracted vs published
     
-    clustering maybe? ver se as características agrupam em clusters diferentes ou não?
+    stacked bar chart
     
-- Verificar se as datas de retração para um autor são as mesmas
+- Heatmap with common reasons
     
-    Verificar se foram em batch. viram um retraído, ent foram ver as outras publicações do autor. Ou dados de um artigo tiveram impacto em outros artigos que fez. 
+    Group reasons of retraction, then see which reasons happen in simultaneous the most
     
-    Ver também se se o mais recente foi retraído, se depois retraíram outros mais antigos, ou se é maioritariamente por ordem cronologica
-    
-- Spellcheck abstract compare to retractions
-    
-    pip install pyspellchecker -> this package allows to see spelling. count wrong spellings and correlate
-    
-    not good for scientific jargon
-    
+
+### Temporal Trends and Author and Institutional Impact
+
 - Cloropeth with network
     
     map of countries with colors representing number of retractions. with flows joining countries that collaborate, with width proportional to number of retractions. 
     
     The map can be normalized by number of articles written by those countries. bc proportion wise, they might have more retractions
     
+- Collaboration network
+    
+    Network of authors joining author collaborations.
+    
+- Authors vs time dot chart
+    
+    dot chart: author in y-axis , time in x. Dot at retracted article time. Color (and sorted) according to nº of retracted articles of author. 
+    
+- Did an author suffer from multiple simultaneous retractions?
+    
+    Verificar se foram em batch. viram um retraído, ent foram ver as outras publicações do autor. Ou dados de um artigo tiveram impacto em outros artigos que fez. 
+    
+    Ver também se se o mais recente foi retraído, se depois retraíram outros mais antigos, ou se é maioritariamente por ordem cronologica
+    
+    Heatmap maybe?
+    
+- Are authors cited less after retraction incidents?
+    
+    Regression analysis. See https://doi.org/10.1016/j.respol.2018.01.012
+    
+
+### Citations
+
+- Comparar citações positivas/negativas em relação ao artigo retraído
+    
+    Text mining sentiment analysis? tenho de saber onde é citado dentro dos artigos para conseguir fazer isto.
+    
+    ver tanto antes como depois da retração
+    
+- Descriptive statistics about post-retraction citations
+    
+    Mean/median nº of post-retraction citations
+    
+    Frequency of different reasons (or by area/journal) for retraction among subset
+    
+    Average time between retraction and first post-retraction
+    
+- Compare retractions with and without post-retraction citations
+    
+    Statistically significant difference in factors such as:  filed, journal, reason, year, authors history
+    
+
+### Referee Reports
+
+- Logistic regression→ probability of reviewers identifying issues leading to retraction
+    
+    Characteristics used in article: topic similarity (topical distance between review comment and all review comments performed by the same reviewer calculated using word2vec); avg comment length; acceptance rate; seniority; nº reviews.
+    
+
+### Impact
+
+- Compare pre and post retraction characteristics
+    
+    For the first retraction of the authors. see the characteristics before and after (h index, citations, etc.). if we have panel data, we might use a regression to see the impact of a certain characteristic (like citation count)
+    
+- Cluster the response to retractions
+    
+    Group authors based on the impact they suffered in various characteristics. May help identify different patterns of impact, such as authors who recover quickly, authors who experience a long-term decline, or authors whose impact remains relatively stable.
+    
+    Example variables: nº of papers published per year, citation counts per publication, h-index, collaboration network, altmetrics (online mentions, social media activity, media coverage), mean ranking of journal of new publications, etc.
+    
+- Test statistical significance of change
+    
 
 
+
+## Important Links
+
+- [Retraction Watch Database](http://retractiondatabase.org/RetractionSearch.aspx?AspxAutoDetectCookieSupport=1); [User Guide](https://retractionwatch.com/retraction-watch-database-user-guide/)
+- [Rank revistas científicas](https://www.scimagojr.com/)
+- [Altmetric explorer](https://www.altmetric.com/explorer/login), [PlumX Metrics](https://plumanalytics.com/learn/about-metrics/), [Dimensions](https://www.dimensions.ai/dimensions-data/)
