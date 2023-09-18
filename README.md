@@ -1,15 +1,16 @@
 # Retractions
 
-## **Tópicos**
+## **Topics**
 
 - Papers about retractions
 - Retracted articles
 - Citations of retracted articles
 - Referee reports
 
-## **Sub-tópicos**
+## **Sub-topics**
 
 *Retraction characteristics*
+
 RWD data
 - Reasons for retraction
 - Who initiated retraction proceedings (if it was the author, publisher, etc.)
