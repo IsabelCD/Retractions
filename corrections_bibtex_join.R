@@ -2,7 +2,7 @@ library(bibliometrix)
 library(dplyr)
 library(ggplot2)
 
-work_path <- "C:\\Users\\isabe\\Desktop\\Tese"
+work_path <- "C:\\Users\\isabe\\Desktop\\Tese\\thesis_data"
 
 importTextFilesAsDataFrame <- function(folder_path, prefix) {
   # list text files in the specified folder
@@ -34,6 +34,7 @@ df <- convert2df(file = files_path, dbsource = "wos", format = "bibtex")
 save(df, file = paste(work_path, "processed_data", "WoS_corrections_Rdata.Rda", sep = "/"))
 # save csv
 write.csv(df, file = paste(work_path, "processed_data", "WoS_corrections_Rdata.csv", sep = "/"), row.names = FALSE)
+write_parquet(df, file = paste(work_path, "processed_data", "WoS_corrections_Rdata.parquet", sep = "/"))
 
 # load data to work with
 load(paste(work_path, "processed_data", "WoS_corrections_Rdata.Rda", sep = "/"))
