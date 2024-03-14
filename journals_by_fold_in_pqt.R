@@ -1,6 +1,7 @@
 library(bibliometrix)
 library(dplyr)
 library(ggplot2)
+library(arrow)
 
 work_path <- "C:\\Users\\isabe\\Desktop\\Tese\\thesis_data\\filtered_journals"
 
@@ -25,20 +26,19 @@ importTextFilesAsDataFrame <- function(folder_path, prefix) {
   return(paths)
 }
 
-files_path <- importTextFilesAsDataFrame(paste(work_path, "journals100-499_P1", sep = "/"), prefix = "savedrecs")
-
+files_path <- importTextFilesAsDataFrame(paste(work_path, "journals100-499_P3", sep = "/"), prefix = "savedrecs")
+files_path
 # import files
 df <- convert2df(file = files_path, dbsource = "wos", format = "bibtex")
-
+convert2df(file = "C:\\Users\\isabe\\Downloads\\savedrecs.txt", dbsource = "wos", format = "plaintext")
 
 work_path <- "C:\\Users\\isabe\\Desktop\\Tese\\thesis_data"
 # save Rdata
-save(df, file = paste(work_path, "processed_data", "WoS_journals100-499_P1_Rdata.Rda", sep = "/"))
+save(df, file = paste(work_path, "processed_data", "WoS_journals100-499_P3_Rdata.Rda", sep = "/"))
 # save csv
-write.csv(df, file = paste(work_path, "processed_data", "WoS_journals100-499_P1_Rdata.csv", sep = "/"), row.names = FALSE)
+write.csv(df, file = paste(work_path, "processed_data", "WoS_journals100-499_P3_Rdata.csv", sep = "/"), row.names = FALSE)
 
-library(arrow)
-write_parquet(df, paste(work_path, "processed_data", "WoS_journals100-499_P1_Rdata.parquet", sep = "/")) #files
+write_parquet(df, paste(work_path, "processed_data", "WoS_journals100-499_P3_Rdata.parquet", sep = "/")) #files
 
 
 
